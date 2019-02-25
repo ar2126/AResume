@@ -4,7 +4,7 @@ AFRAME.registerComponent('markerhandler', {
 
     init: function() {
 
-        const animatedMarker = document.querySelector("#links");
+        const linkedMarker = document.querySelector("#links");
 
         const aEntity = document.querySelector("#github");
         
@@ -15,7 +15,7 @@ AFRAME.registerComponent('markerhandler', {
         
        
         //finds position of selected element and cross-references it to the a-entity model object
-        animatedMarker.addEventListener('click', function(ev, target){
+        linkedMarker.addEventListener('click', function(ev, target){
 
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
 

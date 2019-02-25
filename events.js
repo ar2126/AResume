@@ -17,7 +17,10 @@ AFRAME.registerComponent('markerhandler', {
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
 
             if (aEntity && intersectedElement === aEntity) {
-
+                
+                if(target.getAttribute('id') === "github"){
+                    console.log("TRUE);
+                }
                 window.open("https://www.github.com/ar2126");
 
             }

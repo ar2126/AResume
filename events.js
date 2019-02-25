@@ -4,7 +4,7 @@ AFRAME.registerComponent('markerhandler', {
 
     init: function() {
 
-        const animatedMarker = document.querySelector("#animated-marker");
+        const animatedMarker = document.querySelector("#links");
 
 
 

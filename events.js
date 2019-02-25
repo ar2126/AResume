@@ -19,7 +19,7 @@ AFRAME.registerComponent('markerhandler', {
             if (aEntity && intersectedElement === aEntity) {
                 
                 if(target.getAttribute('id') === "github"){
-                    console.log("TRUE);
+                    console.log("TRUE");
                 }
                 window.open("https://www.github.com/ar2126");
 

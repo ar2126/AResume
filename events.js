@@ -6,12 +6,17 @@ AFRAME.registerComponent('markerhandler', {
 
         animatedMarker.addEventListener('click', function(ev){
             if (animatedMarker.object3D.visible == true && ev.detail.cursorEl) {
+                if(ev.target.getAttribute('id') === "github"){
+                    window.open("https://www.github.com")
+                }
+                /*
                 const entity = document.querySelector('#animated-model');
                 const scale = entity.getAttribute('scale');
                 Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
                 
                 // every click, we make our model grow in size
                 entity.setAttribute('scale', scale);
+                */
             }
         });
 }});

@@ -6,10 +6,11 @@ AFRAME.registerComponent('markerhandler', {
 
         animatedMarker.addEventListener('click', function(ev){
             if (animatedMarker.object3D.visible == true && ev.detail.cursorEl) {
-                if(ev.target.getAttribute('id') === "github"){
-                    window.open("https://www.github.com")
+                window.open("https://www.github.com");
+                /*if(ev.target.getAttribute('id') === "github"){
+                    
                 }
-                /*
+                
                 const entity = document.querySelector('#animated-model');
                 const scale = entity.getAttribute('scale');
                 Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);

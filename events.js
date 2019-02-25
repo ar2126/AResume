@@ -12,10 +12,9 @@ AFRAME.registerComponent('markerhandler', {
 
         const aEntity3 = document.querySelector("#linkedin");
 
-
-
-        // every click, we make our model grow in size :)
-
+        
+       
+        //finds position of selected element and cross-references it to the a-entity model object
         animatedMarker.addEventListener('click', function(ev, target){
 
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
@@ -24,18 +23,10 @@ AFRAME.registerComponent('markerhandler', {
                 window.open("https://www.github.com/ar2126");
             }
             else if (aEntity2 && intersectedElement === aEntity2) {
-                const scale = aEntity2.getAttribute('scale');
-
-                Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
-
-                aEntity2.setAttribute('scale', scale);
+                window.open("https://twitter.com/WoolybearTV");
             }
             else if (aEntity3 && intersectedElement === aEntity3) {
-                const scale = aEntity3.getAttribute('scale');
-
-                Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
-
-                aEntity3.setAttribute('scale', scale);
+                window.open("https://www.linkedin.com/in/aidan-rubenstein-58a00b134/");
             }
 
         });

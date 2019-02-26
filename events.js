@@ -21,12 +21,15 @@ AFRAME.registerComponent('markerhandler', {
 
             if (aEntity && intersectedElement === aEntity) {
                 window.open("https://www.github.com/ar2126");
+                console.log("Success.");
             }
             else if (aEntity2 && intersectedElement === aEntity2) {
                 window.open("https://twitter.com/WoolybearTV");
+                console.log("Success.");
             }
             else if (aEntity3 && intersectedElement === aEntity3) {
                 window.open("https://www.linkedin.com/in/aidan-rubenstein-58a00b134/");
+                console.log("Success.");
             }
 
         });
